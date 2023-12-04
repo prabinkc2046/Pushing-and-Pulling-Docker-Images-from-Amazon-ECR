@@ -10,25 +10,25 @@ Installing aws cli
 [Demo video](https://youtu.be/N4TAsmQwC_A)
 
 Configuring aws cli
-[Demo video] (https://youtu.be/JCYmI2wT3DA)
+[Demo video](https://youtu.be/JCYmI2wT3DA)
 
 Setting up mysql server for django app on the local host 
 [Demo video](https://youtu.be/qJBYJE4j_xE)
 
 Building docker image for mysql
-[Demo video] (https://youtu.be/-2wjklK1jGo)
+[Demo video](https://youtu.be/-2wjklK1jGo)
 
 Creating repository and pushing mysql image into ECR
-[Demo video] (https://youtu.be/FLvtWIImPpU)
+[Demo video](https://youtu.be/FLvtWIImPpU)
 
 Running Django app locally
-[Demo video] (https://youtu.be/EWpsgeivME0)
+[Demo video](https://youtu.be/EWpsgeivME0)
 
 Building Docker image of django app
-[Demo video] (https://youtu.be/1BbKESCRnXQ)
+[Demo video](https://youtu.be/1BbKESCRnXQ)
 
 Creating repository and pushing Django app image into ECR
-[Demo video] (https://youtu.be/a1hvKLWzANo)
+[Demo video](https://youtu.be/a1hvKLWzANo)
 
 Pulling images from ECR and running on local machine
 [Demo video](https://youtu.be/vPS8RSykr6U)
