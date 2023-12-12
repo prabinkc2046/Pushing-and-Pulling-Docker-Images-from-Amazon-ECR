@@ -1,0 +1,16 @@
+[Unit]
+Description=Awesome Django App
+After=network.target
+
+[Service]
+User=ubuntu
+Group=ubuntu
+WorkingDirectory=/home/ubuntu/FrontendApp
+ExecStart=/home/ubuntu/FrontendApp/venv/bin/gunicorn dcrm.wsgi:application --bind 0.0.0.0:8000
+ExecReload=/bin/kill -s HUP $MAINPID
+#To handle stopping or restarting the service
+ExecStop=/bin/kill -s TERM $MAINPID
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

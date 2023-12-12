@@ -1,37 +1,35 @@
-# Pushing and Pulling Docker Images from Amazon ECR
-Welcome to this demo project where I'll guide you through setting up and using AWS CLI to manage Docker images on Amazon Elastic Container Registry (ECR). We'll be working with a two-tier Django app, with Django as the front end and a MySQL container as the backend.
+# Scalable Architecture: Deploying Django with Network Load Balancer and MySQL
+In the ever-evolving landscape of cloud infrastructure, achieving seamless communication between applications and backend services while ensuring scalability and high availability is paramount. This project delves into the dynamic realm of networking architecture, showcasing the utilization of a Network Load Balancer (NLB) to orchestrate communication between a Django application and a backend MySQL server. The strategic deployment of an NLB not only streamlines access to the backend service but also lays the foundation for scalable and highly available EC2 instances.
 
-Our journey begins by installing AWS CLI and configuring it with your access key. The focus of this demonstration is on creating an ECR repository and performing Docker image push and pull operations. To illustrate these processes, we'll start by running the Django app on your local machine. This involves configuring the MySQL server and Django app before creating a Docker image of it using a Dockerfile. Subsequently, we'll push this image into the ECR repository, showcasing the creation and utilization of repositories through AWS CLI.
+The journey begins with the establishment of a robust Virtual Private Cloud (VPC) and the creation of meticulously designed subnets. Two private subnets and one public subnet will be crafted to encapsulate the key components of the infrastructure.
 
-Following the successful local execution of the Django app, we'll repeat the process for creating a Docker image and pushing it to ECR. The final steps involve pulling the Docker images from ECR and running them locally. As the demonstration concludes, we'll cover the cleanup process, including the deletion of repositories and images in AWS.
+A carefully configured security group will envelop the Django application, the Network Load Balancer, and the MySQL server, ensuring a secure and controlled environment.
 
+As the MySQL server takes residence in a private subnet, a pivotal role is played by an EC2 instance situated in the public subnet, serving as a bastion host. This bastion host facilitates access to and configuration of the MySQL server, establishing a secure channel for communication.
 
-Installing aws cli
-[Demo video](https://youtu.be/N4TAsmQwC_A)
+The project unfolds with the meticulous setup of the MySQL server, followed by the configuration of the Django application.
 
-Configuring aws cli
-[Demo video](https://youtu.be/JCYmI2wT3DA)
+Initially, the private IP of the MySQL server acts as the conduit for the Django app. Subsequently, this direct link is superseded by the introduction of the Network Load Balancer's DNS name, elevating the communication to a centralized and scalable point.
 
-Setting up mysql server for django app on the local host 
-[Demo video](https://youtu.be/qJBYJE4j_xE)
+To streamline the management of the Django application, a service file is implemented, enhancing the efficiency and reliability of the deployed application. The project concludes with a systematic cleanup process, ensuring the responsible and efficient dismantling of all created resources.
 
-Building docker image for mysql
-[Demo video](https://youtu.be/-2wjklK1jGo)
+In essence, this demonstration not only elucidates the intricacies of configuring a Network Load Balancer but also presents a holistic approach to architecting a scalable, secure, and resilient cloud infrastructure for modern applications.
 
-Creating repository and pushing mysql image into ECR
-[Demo video](https://youtu.be/FLvtWIImPpU)
+Watch demo videos in order as they appear:
+[vid1 - Introduction.mp4](https://youtu.be/UK_zi0v8qjI)
 
-Running Django app locally
-[Demo video](https://youtu.be/EWpsgeivME0)
+[vid2 - VPC Subnets and Routing.mp4](https://youtu.be/ufa-x1LeMwQ)
 
-Building Docker image of django app
-[Demo video](https://youtu.be/1BbKESCRnXQ)
+[vid3 - Security groups.mp4](https://youtu.be/pdVtwsNdn_4)
 
-Creating repository and pushing Django app image into ECR
-[Demo video](https://youtu.be/a1hvKLWzANo)
+[vid4 -  Launching ec2 instances and setting up mysql server.mp4](https://youtu.be/LA8TZFTLkrI)
 
-Pulling images from ECR and running on local machine
-[Demo video](https://youtu.be/vPS8RSykr6U)
+[vid5 - Setting up Django app.mp4](https://youtu.be/KlTHbVRQIcc)
 
-Deleting images and repo from ECR
-[Demo video](https://youtu.be/Tz6-OV53TLA)
+[vid6 - Setting up Network load balancer.mp4](https://youtu.be/gFdmrntryoU)
+
+[vid7- Setting up systemd for django app.mp4](https://youtu.be/MyKk7Gwb89Y)
+
+[vid8 - Cleanup.mp4](https://youtu.be/7s9eS0C7R-g)
+
+Happy Load Balancing :)
