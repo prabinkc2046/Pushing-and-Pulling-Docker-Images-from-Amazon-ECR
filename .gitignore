@@ -1,8 +1,0 @@
-/data
-/Dockerfile
-/entrypoint.sh
-healthcheck.py
-/mysql
-readme.md
-/venv
-__pycache__
