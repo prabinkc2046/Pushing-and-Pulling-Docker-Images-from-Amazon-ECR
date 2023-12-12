@@ -32,4 +32,4 @@ Watch demo videos in order as they appear:
 
 [vid8 - Cleanup.mp4](https://youtu.be/7s9eS0C7R-g)
 
-Happy Load Balancing :)
+  Happy Load Balancing :)
